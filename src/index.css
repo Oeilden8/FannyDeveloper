@@ -15,12 +15,6 @@
     url(./assets/Yellowtail-Regular.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "IndieFlower";
-  src: local("IndieFlower"),
-    url(./assets/IndieFlower-Regular.ttf) format("truetype");
-}
-
 :root {
   --main-color: #8e53a1;
 }
@@ -40,4 +34,5 @@ body {
 h1 {
   color: var(--main-color);
   font-family: "Yellowtail", cursive;
+  font-size: 30pt;
 }

@@ -1,7 +1,7 @@
 import Home from "./Components/Home";
 import { Routes, Route } from "react-router-dom";
 
-export default function App() {
+function App() {
   return (
     <div>
       <Routes>
@@ -17,3 +17,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
