@@ -88,6 +88,10 @@
   border-right: solid rgb(43, 43, 43) 1px;
 }
 
+#end {
+  border-right: none;
+}
+
 .contact-block button {
   border-style: none;
   background-color: transparent;

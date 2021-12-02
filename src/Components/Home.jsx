@@ -66,7 +66,7 @@ export default function Home() {
           <p className={contact ? "p-active" : "p-hide"}>06 81 52 77 01</p>
         </div>
 
-        <div className="contact-block">
+        <div className="contact-block" id="end">
           <button type="button" onClick={handleContact}>
             <img src={house} alt="home" />
           </button>
