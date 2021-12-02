@@ -4,6 +4,7 @@ import myAvatar from "../assets/avatarFanny-01.png";
 import phone from "../assets/phone-01.png";
 import mail from "../assets/mail-01.png";
 import house from "../assets/home-01.png";
+import linkedin from "../assets/linkedin-01.png";
 
 export default function Home() {
   const [active, setActive] = useState(false);
@@ -32,6 +33,7 @@ export default function Home() {
         </p>
       </section>
       <h1 className="dev-title">Développeuse Web</h1>
+
       <section className="contact">
         <div className="contact-block">
           <button type="button" onClick={handleContact}>
@@ -41,12 +43,29 @@ export default function Home() {
             fanny.lagadec.pro@gmail.com
           </p>
         </div>
+
+        <div className="contact-block">
+          <button type="button" onClick={handleContact}>
+            <img src={linkedin} alt="linkedin" />
+          </button>
+          <p className={contact ? "p-active" : "p-hide"}>
+            <a
+              href="https://www.linkedin.com/in/fanny-l-dev/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              fanny-l-dev/
+            </a>
+          </p>
+        </div>
+
         <div className="contact-block">
           <button type="button" onClick={handleContact}>
             <img src={phone} alt="phone" />
           </button>
           <p className={contact ? "p-active" : "p-hide"}>06 81 52 77 01</p>
         </div>
+
         <div className="contact-block">
           <button type="button" onClick={handleContact}>
             <img src={house} alt="home" />
