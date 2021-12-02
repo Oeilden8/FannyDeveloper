@@ -8,6 +8,8 @@ import house from "../assets/home-01.png";
 export default function Home() {
   const [active, setActive] = useState(false);
   const handlePres = () => setActive(!active);
+  const [contact, setContact] = useState(false);
+  const handleContact = () => setContact(!contact);
 
   return (
     <div>
@@ -31,18 +33,26 @@ export default function Home() {
       </section>
       <h1 className="dev-title">Développeuse Web</h1>
       <section className="contact">
-        <button type="button">
-          <img src={mail} alt="mail" />
-        </button>
-        <p>fanny.lagadec.pro@gmail.com |</p>
-        <button type="button">
-          <img src={phone} alt="phone" />
-        </button>
-        <p>06 81 52 77 01</p>
-        <button type="button">
-          <img src={house} alt="home" />
-        </button>
-        <p>Chartres</p>
+        <div className="contact-block">
+          <button type="button" onClick={handleContact}>
+            <img src={mail} alt="mail" />
+          </button>
+          <p className={contact ? "p-active" : "p-hide"}>
+            fanny.lagadec.pro@gmail.com
+          </p>
+        </div>
+        <div className="contact-block">
+          <button type="button" onClick={handleContact}>
+            <img src={phone} alt="phone" />
+          </button>
+          <p className={contact ? "p-active" : "p-hide"}>06 81 52 77 01</p>
+        </div>
+        <div className="contact-block">
+          <button type="button" onClick={handleContact}>
+            <img src={house} alt="home" />
+          </button>
+          <p className={contact ? "p-active" : "p-hide"}>Chartres</p>
+        </div>
       </section>
     </div>
   );
