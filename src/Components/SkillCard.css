@@ -1,0 +1,31 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: 60px auto 60px auto;
+}
+
+.skill-card-verso img {
+  width: 350px;
+  filter: drop-shadow(10px 10px 5px rgb(43, 43, 43));
+}
+
+.skill-card-verso :hover {
+  cursor: pointer;
+}
+
+.skill-card {
+  width: 350px;
+  height: 460px;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 5px rgb(43, 43, 43));
+  border: solid rgb(43, 43, 43) 3px;
+  background-color: rgb(241, 238, 238);
+}
+
+h2 {
+  color: var(--main-color);
+  font-family: "Yellowtail", cursive;
+  font-size: 25pt;
+}

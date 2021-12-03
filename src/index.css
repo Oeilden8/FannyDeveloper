@@ -36,3 +36,12 @@ h1 {
   font-family: "Yellowtail", cursive;
   font-size: 30pt;
 }
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+ul li {
+  list-style: none;
+}
